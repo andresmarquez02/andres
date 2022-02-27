@@ -1,0 +1,41 @@
+{
+    "nav": {
+        "beginning": "Inicio",
+        "about" : "Acerca",
+        "tecnologies": "Tecnologias",
+        "projects": "Proyectos"
+    },
+    "presentation": {
+        "title" : "Hola, soy Andres Marquez, Desarrollador Web. ",
+        "subtitle" : "Bienvenido a mi portafolio."
+    },
+    "about":{
+        "title": "Acerca de mí",
+        "nac": "Nací: 02 Julio 2001, Caracas, Venezuela.",
+        "years": "Años: 20.",
+        "freelancer": "FreeLancer: Disponible (Tiempo Completo).",
+        "description": "Soy un Desarrollador Web responsable, proactivo, motivado, enfocado, creativo, puntual e innovador, que tiene por objetivo el Desarrollo de sitios web con interfaz agradable, codigo limpio y bases de datos ordenadas, siendo una persona comprometida con mi trabajo, tambien poseo cualidades a nivel social que me permiten elaborar cualquier tarea en grupo.",
+        "button_cv": "Ver CV"
+        
+    },
+    "help":{
+        "need": "¿Necesitas un?",
+        "help_one": "Front-end Web",
+        "help_two": "Backend Web",
+        "help_three": "Administrador de Bases de Datos"
+    },
+    "tecnologies":{
+        "post-title": "Lenguajes, Frameworks y Librerias",
+        "title": "Tecnologias Dominadas",
+        "description": "Las siguientes tecnoglogias son las que mejor domino, y las cuales e implementado tanto en proyectos de clientes como en proyectos personales o pequeñas practicas."
+    },
+    "portfolio":{
+        "post-title": "Portafolio",
+        "title": "Practicas y Proyectos Realizadas",
+        "job_one": "Sistema de preguntas y respuesta",
+        "job_two": "Web de noticias",
+        "job_three": "Tienda virtual con procesador de pago de Lexachange",
+        "job_four": "Exchange",
+        "job_five": "Plantilla css"
+    }
+}

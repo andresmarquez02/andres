@@ -1,0 +1,41 @@
+{
+    "nav": {
+        "beginning": "Beginning",
+        "about" : "About",
+        "tecnologies": "Technologies",
+        "projects": "Projects"
+    },
+    "presentation": {
+        "title" : "Hi, I'm Andres Marquez, Web Developer.",
+        "subtitle" : "Welcome to my portfolio"
+    },
+    "about":{
+        "title": "About me",
+        "nac": "I was born: July 02, 2001, Caracas, Venezuela.",
+        "years": "Years: 20.",
+        "freelancer": "FreeLancer: Available (Full Time).",
+        "description": "I am a responsible, proactive, motivated, focused, creative, punctual and innovative Web Developer, whose objective is the Development of websites with a pleasant interface, clean code and orderly databases, being a person committed to my work, I also have qualities on a social level that allows me to develop any task in a group.",
+        "button_cv": "See CV"
+        
+    },
+    "help":{
+        "need": "You need a?",
+        "help_one": "Front-end Web",
+        "help_two": "Backend Web",
+        "help_three": "Database Administrator"
+    },
+    "tecnologies":{
+        "post-title": "Languages, Frameworks and Libraries",
+        "title": "Mastered Technologies",
+        "description": "The following technologies are the ones I master the best, and I have implemented them both in client projects and in personal projects or small practices."
+    },
+    "portfolio":{
+        "post-title": "Portfolio",
+        "title": "Internships and Projects Made",
+        "job_one": "Question and answer system",
+        "job_two": "News website",
+        "job_three": "Virtual store with Lexachange payment processor",
+        "job_four": "Exchange",
+        "job_five": "Css template"
+    }
+}
