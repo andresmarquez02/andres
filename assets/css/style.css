@@ -3,11 +3,7 @@
     Mi portafolio.
     Contacto: +58 412 929 8833
 */
-/*@import url("../fontawesome-free-5.15.1-web/css/all.css");
-@import url("../fontawesome-free-5.15.1-web/css/solid.min.css");
-@import url("../fontawesome-free-5.15.1-web/css/v4-shims.min.css");
-@import url("../fontawesome-free-5.15.1-web/css/brands.min.css");
-*/@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/regular.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/v4-shims.min.css");
@@ -272,7 +268,7 @@ img{
         -ms-transition: .5s;
         -o-transition: .5s;
         box-shadow:  -2px 9px 6px -2px rgb(30, 60, 78, 40%);
-}
+    }
 }
 .nav_item{
     margin-bottom: var(--mb-4);
@@ -303,8 +299,65 @@ img{
 .active-link {
     color: var(--text-white) !important;
 }
+.bars{
+    width: 24px;
+    height: 14px;
+    position: relative;
+}
+.bars::before, .bars::after{
+    content: '';
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    z-index: 900;
+    background-color: var(--first-color-img-work);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.bars::before{
+    top: 0;
+}
+.bars::after{
+    bottom: 0;
+}
+.bars::before, .bars::after, .show__bars::after, .show__bars::before{
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+.show__bars::after{
+    transform: translate(-10%,-350%) rotate(-45deg);
+    -webkit-transform: translate(-10%,-350%) rotate(-45deg);
+    -moz-transform: translate(-10%,-350%) rotate(-45deg);
+    -ms-transform: translate(-10%,-350%) rotate(-45deg);
+    -o-transform: translate(-10%,-350%) rotate(-45deg);
+}
+.show__bars::before{
+    transform: translate(-10%,10%) rotate(45deg);
+    -webkit-transform: translate(-10%,10%) rotate(45deg);
+    -moz-transform: translate(-10%,10%) rotate(45deg);
+    -ms-transform: translate(-10%,10%) rotate(45deg);
+    -o-transform: translate(-10%,10%) rotate(45deg);
+}
 .show{
     right: 0;
+}
+.backdrop__bar{
+    background-color: rgba(0, 0, 0, 0.322);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display:none;
+}
+.backdrop__bar_show{
+    display:flex;
 }
 .home{
     display:flex;

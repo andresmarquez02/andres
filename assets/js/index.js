@@ -1,5 +1,7 @@
 let top_nav = document.querySelector("#top_nav");
 let logo = document.querySelector("#logo");
+let bars = document.querySelector(".bars");
+let backdrop = document.querySelector(".backdrop__bar");
 window.onscroll = function(){
     let y = window.scrollY;
     if(y > 50){
@@ -18,6 +20,8 @@ const showMenu = (ToggleId, navId) =>{
     if(toggle && nav ){
         toggle.addEventListener('click',()=>{
             nav.classList.toggle('show');
+            bars.classList.toggle("show__bars");
+            backdrop.classList.toggle("backdrop__bar_show");
         });
     }
 }
@@ -34,6 +38,8 @@ function linkAction(){
     });
     let navMenu = document.querySelector('.nav_menu');
     navMenu.classList.remove('show');
+    bars.classList.remove("show__bars");
+    backdrop.classList.remove("backdrop__bar_show");
 }
 navLink.forEach(element => element.addEventListener('click', linkAction));
 
