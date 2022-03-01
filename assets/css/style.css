@@ -661,6 +661,7 @@ img{
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
+    padding: 1.5rem;
 }
 @media (min-width:720px){
     .h-20{
