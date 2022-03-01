@@ -156,7 +156,8 @@ img{
     align-items: center;
     z-index:1020;
     position: fixed;
-    background-color:var(--text-white);
+    background-color: var(--text-color-img-work);
+    top: 0;
 }
 .preload{
     border: 6px #ff000000 solid;
@@ -869,7 +870,7 @@ img{
 .social_media a{
     color: var(--second-color) !important;
     margin: 0 .3rem;
-    font-size: 19px !important;
+    font-size: 24px !important;
 }
 .footer_container{
     row-gap: 1rem;

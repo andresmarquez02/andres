@@ -2,6 +2,14 @@ let top_nav = document.querySelector("#top_nav");
 let logo = document.querySelector("#logo");
 let bars = document.querySelector(".bars");
 let backdrop = document.querySelector(".backdrop__bar");
+
+document.addEventListener('Load', function(){
+    document.getElementById('preload').style.display="flex";
+    document.querySelector("body").style.overflowY="hidden";
+});
+document.querySelector("body").style.overflowY="auto";
+document.getElementById('preload').style.display="none";
+
 window.onscroll = function(){
     let y = window.scrollY;
     if(y > 50){
