@@ -397,6 +397,10 @@ img{
     padding-top: 2rem;
 }
 .home_title-color{
+    background: -webkit-linear-gradient(var(--first-color), var(--first-color));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--first-color);
     color: var(--first-color);
 }
 .home_img{
