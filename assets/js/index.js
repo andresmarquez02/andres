@@ -116,6 +116,7 @@ let mode = document.querySelector("#mode");
 mode.addEventListener("click", () => {
     let mode_save = localStorage.getItem("mode");
     if(mode_save == "light"){
+        console.log(mode_save);
         dark(mode.children[0]);
         localStorage.setItem("mode","dark");
         return 0;
@@ -129,7 +130,6 @@ let dark = (i) => {
         "#ffffff","#0a1017","#0c131b","#0c131b","#1d2732","#b9b9b914","#e7edf2","#a4afb7","#0a1117"
     ];
     change(colors);
-    i.classList = "fas fa-sun";
     document.querySelector("body").setAttribute("style","background: url(assets/images/dark.svg) var(--three-color) no-repeat center");
 }
 
@@ -138,7 +138,6 @@ let light = (i) => {
         "#3b3f44","#fff","#fdfdfd","#0a1117","#e0e3ea","#1e3c4e14","#0a1117fb","#081117f8","#fff"
     ];
     change(colors);
-    i.classList = "fas fa-moon";
     document.querySelector("body").setAttribute("style","background: url(assets/images/light.svg) var(--three-color) no-repeat center");
 }
 let change = (colors) => {
@@ -151,6 +150,7 @@ if(localStorage.getItem("mode") == null){
 }
 else{
     if(localStorage.getItem("mode") == "dark"){
+        mode.checked = true;
         dark(mode.children[0]);
     }
 }
